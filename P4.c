@@ -1,18 +1,18 @@
-\\MARINA CERVI ANGSTMAM
-\\11811EEL035
-#include <stdio.h>
-int main()
-{
-	int conv=0, cum=0, i=0;
+/*MARINA CERVI ANGSTMAM
+11811EEL035*/
+
+#include<stdio.h>
+int main(){
+	
 	char numero[256];
 	scanf("%s", numero);
-	getchar();
-	for (i=0; numero[i]; i++)
+	int i=0, cum=0;	
+	while(numero[i]!='\0')
 	{
-		if ((numero[i]-'0')>=0 && (numero[i]-'0')<=9)
-			cum=cum*10+(numero[i]-'0');
-		else;
+	if(numero[i]>=48&&numero[i]<=57)
+		cum=cum*10+numero[i]-48;
+		i++;
 	}
-	printf("%i", cum);
-	return 0;
+	printf("%d", cum);
+		return 0;
 }
