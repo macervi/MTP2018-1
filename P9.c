@@ -1,5 +1,5 @@
-/*Aluno: MARINA CERVI ANGSTMAM
-Matricula: 11811EEL035 */
+//Aluno: MARINA CERVI ANGSTMAM
+//Matricula: 11811EEL035
 
 #include<stdio.h>
 #include<string.h>
@@ -17,7 +17,7 @@ struct Produto{
 
 void cadastrar(struct Produto Quant[], int i)
 {
-	scanf("%s", &Quant[i].nome);
+	scanf("%s", Quant[i].nome);
 	scanf("%f", &Quant[i].preco);
 	scanf("%f", &Quant[i].dimensoes.largura);
 	scanf("%f", &Quant[i].dimensoes.profundidade);
